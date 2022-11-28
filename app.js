@@ -8,6 +8,10 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 var title = "About Us";
 
+app.get("/", function (req, res) {
+    res.render("about-us", { title: "About Us", menuId: "aboutUs" });
+});
+
 app.get("/login", function (req, res) {
     res.render("login", { title: "Login" });
 });

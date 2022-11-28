@@ -1,0 +1,40 @@
+<section class="left-sidebar">
+    <nav class="admin-main-menu">
+        <ul class="nav-menu">
+            <li>
+                <a href="#" class="menu-item"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+                <a href="#" class="menu-item"><i class="fa-solid fa-layer-group"></i>Overview</a>
+            </li>
+            <li id="aboutUs">
+                <a href="/about-us" class="menu-item"><i class="fa-solid fa-database"></i>About</a>
+            </li>
+            <li id="nurseList">
+                <a href="/nurse-list" class="menu-item"><i class="fa-solid fa-user-nurse"></i>Nurses</a>
+            </li>
+            <li id="hospitaList">
+                <a href="/hospital-list" class="menu-item"><i class="fa-solid fa-hospital"></i>Hospitals</a>
+            </li>
+            <li id="ambulanceList">
+                <a href="/ambulance-list" class="menu-item"><i class="fa-solid fa-truck-medical"></i>Ambulances</a>
+            </li>
+            <li id="medicalEquipment">
+                <a href="/medical-equipment" class="menu-item"><i class="fa-regular fa-keyboard"></i>Equipments</a>
+            </li>
+            <li id="healthTips">
+                <a href="/health-tips" class="menu-item"><i class="fa-solid fa-notes-medical"></i>Health Tips</a>
+            </li>
+            <li id="terms">
+                <a href="/terms" class="menu-item"><i class="fa-solid fa-building-shield"></i>Terms & Policy</a>
+            </li>
+        </ul>
+    </nav>
+</section>
+
+<script>
+    function addActiveClass(id) {
+        document.querySelector("#" + id).classList.add("active");
+    }
+    addActiveClass("<%- menuId %>");
+</script>

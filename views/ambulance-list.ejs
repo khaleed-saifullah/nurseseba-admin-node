@@ -1,0 +1,172 @@
+<%- include('header'),{title:title}; -%>
+    <%- include('left-sidebar'); -%>
+
+        <section class="main-content">
+            <div class="nurses-list-wrapper">
+                <div class="info-section-header">
+                    <h2 class="section-header">
+                        Ambulance
+                    </h2>
+                    <div class="action-button">
+                        <span>
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-bell"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-circle-user"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="nurses-list-content">
+                    <div class="list-table">
+                        <table class="table table-bordered table-striped table-responsive">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Mobile</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Qty of bed</th>
+                                    <th scope="col">Service</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <img src="images/user-sample-image.png" alt="" class="nurse-image">
+                                    </th>
+                                    <td>Bismillah Enterprize</td>
+                                    <td>017500000000</td>
+                                    <td>Area, District, Division</td>
+                                    <td>100</td>
+                                    <td>High</td>
+                                    <td class="table-action-btn"><i class="fa-solid fa-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img src="images/user-sample-image.png" alt="" class="nurse-image">
+                                    </th>
+                                    <td>Bismillah Enterprize</td>
+                                    <td>017500000000</td>
+                                    <td>Area, District, Division</td>
+                                    <td>100</td>
+                                    <td>High</td>
+                                    <td class="table-action-btn"><i class="fa-solid fa-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img src="images/user-sample-image.png" alt="" class="nurse-image">
+                                    </th>
+                                    <td>Bismillah Enterprize</td>
+                                    <td>017500000000</td>
+                                    <td>Area, District, Division</td>
+                                    <td>100</td>
+                                    <td>High</td>
+                                    <td class="table-action-btn"><i class="fa-solid fa-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img src="images/user-sample-image.png" alt="" class="nurse-image">
+                                    </th>
+                                    <td>Bismillah Enterprize</td>
+                                    <td>017500000000</td>
+                                    <td>Area, District, Division</td>
+                                    <td>100</td>
+                                    <td>High</td>
+                                    <td class="table-action-btn"><i class="fa-solid fa-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img src="images/user-sample-image.png" alt="" class="nurse-image">
+                                    </th>
+                                    <td>Bismillah Enterprize</td>
+                                    <td>017500000000</td>
+                                    <td>Area, District, Division</td>
+                                    <td>100</td>
+                                    <td>High</td>
+                                    <td class="table-action-btn"><i class="fa-solid fa-trash"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="add-information">
+                        <div class="add-information-header">
+                            <i class="fa-solid fa-pen"></i>
+                            Add an ambulance
+                        </div>
+                        <div class="add-information-form">
+                            <form>
+                                <div class="form-inner-div">
+                                    <div class="d-flex align-items-center name">
+                                        <label>Name</label>
+                                        <input type="text" name="" id="hospital-name" class="form-control">
+                                    </div>
+                                    <div class="d-flex align-items-center bed-size">
+                                        <label>Bed</label>
+                                        <input type="number" name="" id="bed-number" class="form-control">
+                                    </div>
+                                    <select class="form-select">
+                                        <option selected>--Select Service</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="form-inner-div">
+                                    <div class="d-flex align-items-center location">
+                                        <label>Location</label>
+                                        <input type="text" name="" id="" class="form-control">
+                                    </div>
+                                    <select class="form-select division-name">
+                                        <option selected>--Division</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <select class="form-select district-name">
+                                        <option selected>--District</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <select class="form-select upazilla-name">
+                                        <option selected>--Upazilla/Thana</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="form-inner-div">
+                                    <div class="d-flex align-items-center area">
+                                        <label>Area</label>
+                                        <input type="text" name="" id="" class="form-control">
+                                    </div>
+                                    <div class="d-flex align-items-center hotline">
+                                        <label>Hotline</label>
+                                        <input type="text" name="" id="" class="form-control">
+                                    </div>
+                                    <div class="information-upload">
+                                        <div class="information-upload-input">
+                                            <label for="ambulance-files" class="file-upload-btn">
+                                                <p>Select a photo to
+                                                    upload</p>
+                                                <span><i class="fa-solid fa-image"></i></span>
+                                            </label>
+                                            <input id="ambulance-files" style="display:none" type="file">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-information-form-submit-btn">
+                                    <button type="submit" class="btn btn-warning">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include('footer'); -%>
